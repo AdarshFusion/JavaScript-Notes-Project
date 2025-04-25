@@ -7,12 +7,17 @@ In JavaScript we have the following conditional statements:
 --  Use switch to specify many alternative blocks of code to be executed
 */
 
+
+//--------------------------------------------------------------------------------------------//
+
 // if Statement 
 
 // Example:
 if (hour < 18) {
     greeting = "Good day";
 }
+
+//--------------------------------------------------------------------------------------------//
 
 
 // else Statement
@@ -34,11 +39,7 @@ else {
     console.log(y, "is not a leap year.");
 }
 
-
-
-
-
-
+//--------------------------------------------------------------------------------------------//
 
 // else if Statement
 
@@ -163,4 +164,89 @@ else if (choose == 3) {
 }
 else {
     console.log("Something Went Wrong.");
+}
+
+
+//--------------------------------------------------------------------------------------------//
+
+// switch Statement
+// Use the switch statement to select one of many code blocks to be executed.
+
+// Example-1: 
+let day = 0;
+switch (day) {
+    case 0:
+        console.log("Sunday");
+        break;
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Saturday");
+    default:
+        console.log("No data is there for this number");
+        break;
+}
+
+
+// Example-2: WAP to calculate the add,sub,mul,div and expo of given number.
+let cal = "Sub";
+let num1 = 4;
+let num2 = 10;
+switch (cal) {
+    case "Add":
+        console.log(num1 + num2);
+        break;
+    case "Sub":
+        console.log(num1 - num2);
+        break;
+    case "Mul":
+        console.log(num1 * num2);
+        break;
+    case "Div":
+        console.log(num1 / num2);
+        break;
+    case "Expo":
+        console.log(num1 ** num2);
+        break;
+    default:
+        console.log("The value is wrong");
+        break;
+}
+
+// Example-3: 
+let gen = "female";
+let age = "1";
+switch (gen) {
+    case "male":
+        if (18 <= age) {
+            console.log("He is eligible for this job.");
+        }
+        else {
+            console.log("He is not eligible for this job.");
+        }
+        break;
+    case "female":
+        if (21 <= age) {
+            console.log("she is eligible for this job.");
+        }
+        else {
+            console.log("She is not eligible for this job.");
+        }
+        break;
+    default:
+        console.log("You are not eligible for this job.");
+        break;
 }
