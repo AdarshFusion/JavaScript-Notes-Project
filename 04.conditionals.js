@@ -66,11 +66,11 @@ else {
 
 
 // Example-2: WAP to check the text is a Alphabet,Number or special character.
-let a = prompt("Enter Something : ");
-if (a >= "a" && a <= "z") {
+let text = prompt("Enter Something : ");
+if (text >= "a" && a <= "z") {
     console.log(a, "is a Alphabet.");
 }
-else if (a >= "0" && a <= "9") {
+else if (text >= "0" && a <= "9") {
     console.log(a, "is a Number.");
 }
 else {
