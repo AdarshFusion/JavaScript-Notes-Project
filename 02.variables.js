@@ -38,8 +38,8 @@ let color = "Yellow";
 let lastName = "Johnson";
 
 // Booleans
-let x = true;
-let y = false;
+let a = true;
+let b = false;
 
 // Object:
 const person = {firstName:"John", lastName:"Doe"};
@@ -61,4 +61,4 @@ JavaScript BigInt
 - JavaScript BigInt is a new datatype (ES2020) that can be used to store integer values that are too big to be represented by a normal JavaScript Number.
 */
 
-let x = BigInt("123456789012345678901234567890");
+let m = BigInt("123456789012345678901234567890");
