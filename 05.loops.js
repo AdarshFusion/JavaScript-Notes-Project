@@ -34,6 +34,48 @@ console.log(`The sum ${i} : ${num1}`);
 
 //--------------------------------------------------------------------------------------------//
 
+/*
+for in loop
+The JavaScript for in statement loops through the properties of an Object.
+syntax:
+        for (key in object) {
+            code block to be executed
+        }
+*/
+// Example-1:
+const person = {
+    fname:"John", 
+    lname:"Doe", 
+    age:25
+};
+
+let text = "";
+for (let x in person) {
+  text += person[x]; // John Doe 25 
+} 
+
+
+//--------------------------------------------------------------------------------------------//
+
+/*
+for of loop
+The JavaScript for of statement loops through the values of an iterable object.
+synatx:
+        for (variable of iterable) {
+            code block to be executed
+        }
+*/
+// Example-1:
+const cars = ["BMW", "Volvo", "Mini"];
+
+let text1 = "";
+for (let x of cars) {
+  text1 += x + "<br>";  // output: BMW \nVolvo \nMini
+}
+
+
+//--------------------------------------------------------------------------------------------//
+
 // while Loop
 
 // Example-1: Print a number from 1 to 10.
